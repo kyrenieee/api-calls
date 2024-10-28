@@ -7,3 +7,11 @@ button {
     background-color: pink;
     font: 100;
 }
+
+body {
+    background: url(pokemon..png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
