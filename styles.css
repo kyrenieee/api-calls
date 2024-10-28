@@ -26,16 +26,16 @@ button {
 }
 
 .btn {
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Press Start 2P', cursive;
-    width: 100px;
-    height: 70px;
+    width: 200px;
+    height: 50px;
     background: #48CFCB;
     border: 0px;
     position: relative;
     box-shadow: 
-        inset -4px 2px 1px 1px gray,
-        inset -4px -2px 1px 1px lightgrey,
+        inset -4px 2px 1px 1px gray, 
+        inset -4px -2px 1px 1px lightgrey, 
         inset 4px 0px 1px 1px lightgrey;
 }
 
