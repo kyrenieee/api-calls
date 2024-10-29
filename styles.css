@@ -7,15 +7,17 @@ body {
     background-attachment: fixed;
   }
 
-  img {
+img {
     display: none;
     height: 190px;
     width: 190px;
 }
 
-button {
-    background-color: pink;
-    font: 100;
+.PokemonName {
+    font-size: 10px;
+    font-family: 'Press Start 2P';
+    width: 100px;
+    height: 50px;
 }
 
 .container {
