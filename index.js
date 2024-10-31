@@ -21,3 +21,12 @@ async function fetchData() {
     console.error(error);
     }
 }
+
+
+function PrevPage() {
+
+}
+
+function NextPage() {
+  
+}

@@ -25,8 +25,17 @@
   </div>
 
   <footer>
-    <button onclick="prevPage()" id="prev" class="ButtonPage">Previous</button>
-    <button onclick="nextPage()" id="next" class="ButtonPage">Next</button>
+    <div class="Pagination">
+      <button onclick="PrevPage()" id="prev" class="ButtonPage">Previous</button>
+        <ul>
+          <li class="link" value="1">1</li>
+          <li class="link" value="2">2</li>
+          <li class="link" value="3">3</li>
+          <li class="link" value="4">4</li>
+          <li class="link" value="5">5</li>
+        </ul>
+      <button onclick="NextPage()" id="next" class="ButtonPage">Next</button>
+    </div>
   </footer>
 
   <script src="index.js"></script>
