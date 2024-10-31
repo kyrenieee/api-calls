@@ -10,7 +10,7 @@ body {
 
 h1 {
     position: relative;
-    font-size: 20px;
+    font-size: 20px solid black;
     font-family: 'Press Start 2P';
 }
 
@@ -78,7 +78,26 @@ table{
         inset 4px 0px 1px 1px lightgrey;
 }
 
-.btn:hover, .ButtonPage:hover {
+ul li {
+    display: inline-block;
+    text-align: center;
+    line-height: 4;
+    font-size: 7px;
+    font-family: 'Press Start 2P';
+    width: 35px;
+    height: 30px;
+    background: #48CFCB;
+    border-left: 1px solid black;
+    border-right: 2px solid black;
+    margin: 10px;
+    position: relative;
+    box-shadow: 
+        inset -4px 2px 1px 1px gray, 
+        inset -4px -2px 1px 1px lightgrey, 
+        inset 4px 0px 1px 1px lightgrey;
+}
+
+.btn:hover, .ButtonPage:hover, ul li:hover {
     cursor: pointer;
     background-color: #229799;
 }
@@ -91,7 +110,7 @@ table{
         4px 0px 1px 1px lightgrey;
 }
 
-.btn::after, .ButtonPage::after {
+.btn::after, .ButtonPage::after, ul li::after {
     content: '';
     background: black;
     position: absolute;
@@ -102,7 +121,7 @@ table{
     z-index: -1;
 }
 
-.btn::before, .ButtonPage::before  {
+.btn::before, .ButtonPage::before, ul li::after  {
     content: '';
     background: black;
     position: absolute;
@@ -111,6 +130,15 @@ table{
     width: 100%;
     height: 113%;
     z-index: -1;
+}
+
+ul li:active {
+    top: 5px;
+    background: #6ECCAF;
+    box-shadow:
+        -4px 2px 1px 1px gray,
+        -4px -2px 1px 1px lightgrey,
+        4px 0px 1px 1px lightgrey;
 }
 
 footer {
@@ -125,23 +153,7 @@ footer {
 .Pagination {
     display: flex;
     align-items: center;
-    color: #383838;
     padding: 10px 40px;
     border-radius: 6px;
 }
 
-ul {
-    margin: 20px 30px;
-}
-
-ul li {
-    display: inline-block;
-    margin: 0 10px;
-    background: #ccc;
-    width: 45px;
-    text-align: center;
-    font-size: 7px;
-    font-weight: 500;
-    line-height: 45px;
-    cursor: pointer;
-}

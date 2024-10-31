@@ -22,6 +22,18 @@ async function fetchData() {
     }
 }
 
+let link = document.getElementsByClassName("link");
+
+let currentValue = 1;
+
+function ActiveLink() {
+  for(l of link) {
+      l.classList.remove("active");
+    }
+
+    event.target.classList.add("active");
+    currentValue = event.target.value;
+}
 
 function PrevPage() {
 
