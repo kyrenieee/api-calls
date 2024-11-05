@@ -4,41 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>API Calls</title>
-  
+  <title>Pokemon API</title>
 </head>
-<body>
+<body>   
+
   <h1>Pokemon API</h1>
   <div class="container">
-    <table>
-      <tr> 
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
-      <tr>
-        <td> <input type="text" id="Pokemons" placeholder="Enter Pokemon Name"> </td>
-        <td> <img src="" alt="Pokemon" id="PokemonSprite"> </td>
-        <td> <button onclick="fetchData()" id="press" class="btn">Who's that pokemon?</button></td>
-      </tr>
-  </table>
+    <input type="text" id="Pokemons" placeholder="Enter Pokemon Name">
+    <img src="" alt="Pokemon" id="PokemonSprite">
+    <button onclick="fetchData()" id="press" class="btn">Who's that Pokemon?</button>
   </div>
 
-  <footer>
-    <div class="Pagination">
-      <button onclick="PrevPage()" id="prev" class="ButtonPage">Previous</button>
-        <ul>
-          <li class="link active" value="1" onclick="ActiveLink()">1</li>
-          <li class="link" value="2" onclick="ActiveLink()">2</li>
-          <li class="link" value="3" onclick="ActiveLink()">3</li>
-          <li class="link" value="4" onclick="ActiveLink()">4</li>
-          <li class="link" value="5" onclick="ActiveLink()">5</li>
-        </ul>
-      <button onclick="NextPage()" id="next" class="ButtonPage">Next</button>
-    </div>
-  </footer>
-
   <script src="index.js"></script>
-
 </body>
 </html>

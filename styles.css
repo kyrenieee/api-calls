@@ -8,8 +8,11 @@ body {
     background-attachment: fixed;
   }
 
+
+
 h1 {
     position: relative;
+    text-align: center;
     font-size: 20px solid black;
     font-family: 'Press Start 2P';
 }
@@ -39,8 +42,8 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     transform: translate(-50%,-50%);
+    gap: 20px;
 }
 
 table{
@@ -48,19 +51,22 @@ table{
     text-align: center;
 }
 
+
 .btn {
-    font-size: 17px;
+    font-size: 1rem;
     font-family: 'Press Start 2P', cursive;
     width: 200px;
     height: 50px;
     background: #48CFCB;
-    border: 10px;
     margin: 10px;
+    padding: 10px;
     position: relative;
+    text-align: center;
     box-shadow: 
         inset -4px 2px 1px 1px gray, 
         inset -4px -2px 1px 1px lightgrey, 
         inset 4px 0px 1px 1px lightgrey;
+    transition: background-color 0.3s ease, top 0.1s ease;
 }
 
 .ButtonPage {
@@ -72,32 +78,15 @@ table{
     border: 10px;
     margin: 10px;
     position: relative;
-    box-shadow: 
-        inset -4px 2px 1px 1px gray, 
-        inset -4px -2px 1px 1px lightgrey, 
-        inset 4px 0px 1px 1px lightgrey;
-}
-
-ul li {
-    display: inline-block;
     text-align: center;
-    line-height: 4;
-    font-size: 7px;
-    font-family: 'Press Start 2P';
-    width: 35px;
-    height: 30px;
-    background: #48CFCB;
-    border-left: 1px solid black;
-    border-right: 2px solid black;
-    margin: 10px;
-    position: relative;
     box-shadow: 
         inset -4px 2px 1px 1px gray, 
         inset -4px -2px 1px 1px lightgrey, 
         inset 4px 0px 1px 1px lightgrey;
+    transition: background-color 0.3s ease, top 0.1s ease;
 }
 
-.btn:hover, .ButtonPage:hover, ul li:hover {
+.btn:hover, .ButtonPage:hover {
     cursor: pointer;
     background-color: #229799;
 }
@@ -110,7 +99,7 @@ ul li {
         4px 0px 1px 1px lightgrey;
 }
 
-.btn::after, .ButtonPage::after, ul li::after {
+.btn::after, .ButtonPage::after {
     content: '';
     background: black;
     position: absolute;
@@ -121,7 +110,7 @@ ul li {
     z-index: -1;
 }
 
-.btn::before, .ButtonPage::before, ul li::after  {
+.btn::before, .ButtonPage::before {
     content: '';
     background: black;
     position: absolute;
@@ -132,28 +121,17 @@ ul li {
     z-index: -1;
 }
 
-ul li:active {
-    top: 5px;
-    background: #6ECCAF;
-    box-shadow:
-        -4px 2px 1px 1px gray,
-        -4px -2px 1px 1px lightgrey,
-        4px 0px 1px 1px lightgrey;
-}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
 
-footer {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
+    img {
+        width: 80%;
+    }
 
-.Pagination {
-    display: flex;
-    align-items: center;
-    padding: 10px 40px;
-    border-radius: 6px;
+    .btn {
+        font-size: 0.9rem;
+        height: 45px;
+    }
 }
-
