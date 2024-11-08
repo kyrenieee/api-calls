@@ -6,13 +6,15 @@
   <link rel="stylesheet" href="styles.css">
   <title>Pokemon API</title>
 </head>
-<body>   
+<body>   5
 
   <h1>Pokemon API</h1>
   <div class="container">
     <input type="text" id="Pokemons" placeholder="Enter Pokemon Name">
     <img src="" alt="Pokemon" id="PokemonSprite">
-    <p id="PokemonStat"></p>
+    <div id="PokemonStat">
+      <ul id="PokemonList"></ul>
+    </div>
     <button onclick="fetchData()" id="press" class="btn">Who's that Pokemon?</button>
   </div>
 

@@ -19,13 +19,24 @@ h1 {
 
 img {
     display: none;
-    height: 200px;
-    width: 200px;
-    margin: 50px;
+    height: 300px;
+    width: 300px;
 }
 
 #Pokemons {
     font-family: 'Inter';
+}
+
+#PokemonList {
+    font-family: 'Press Start 2P';
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#PokemonList li {
+    font-size: 18px;
+    color: black;
 }
 
 .PokemonName {
