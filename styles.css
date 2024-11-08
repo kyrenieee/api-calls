@@ -32,11 +32,9 @@ img {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-  
-#PokemonList li {
     font-size: 18px;
     color: black;
+    text-transform: capitalize;
 }
 
 .PokemonName {
